@@ -1,7 +1,7 @@
 <?php
  session_start();
  if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE){
- header("Location: /Práctica04Ajax/public/vista/login.html");
+ header("Location: /SistemaGestion/public/vista/login.html");
  }
 ?>
 <!DOCTYPE html>

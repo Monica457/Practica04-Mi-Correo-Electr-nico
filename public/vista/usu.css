@@ -16,8 +16,8 @@ h1{
 
 #formulario02{
   position: relative;
-  width: 50%;
-  height: 200px;
+  width: 42%;
+  height: 275px;
   left: 370px;
   border: teal 2px solid;
   padding: 15px;
@@ -40,7 +40,7 @@ body, input {
   font-family: sans-serif;
 }
 
-#crear, #cancelar, #login{
+#crear, #cancelar, #login, a{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   position: relative;
   width: 30%;
@@ -51,11 +51,10 @@ body, input {
 #cancelar{
   left: 120px;
 }
-
 #login{
-  top: 15px;
-  left: 220px;
+  left: 195px;
 }
+
 header{
   background-color: gray;
 }

@@ -1,13 +1,13 @@
 <?php
  session_start();
  if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE){
- header("Location: /SistemaDeGestion/public/vista/login.html");
+ header("Location: /SistemaGestion/public/vista/login.html");
  }
 ?>
 <?php
  session_start();
  if(!isset($_SESSION['isLogged']) || $_SESSION['isLogged'] === FALSE){
- header("Location: /SistemaDeGestion/public/vista/login.html");
+ header("Location: /SistemaGestion/public/vista/login.html");
  }
 ?>
 
@@ -35,17 +35,8 @@
 
     date_default_timezone_set("America/Guayaquil");
     $fecha = date('Y-m-d H:i:s', time());
-
-    $sql = "UPDATE usuario " . 
-        "SET usu_cedula = '$cedula', " . 
-        "usu_nombres = '$nombres', " . 
-        "usu_apellidos = '$apellidos', " . 
-        "usu_direccion = '$direccion', " . 
-        "usu_telefono = '$telefono', " . 
-        "usu_correo = '$correo', " . 
-        "usu_fecha_nacimiento = '$fechaNacimiento', " . 
-        "usu_fecha_modificacion = '$fecha' " . 
-        "WHERE usu_codigo = $codigo";
+  
+    $sql = "UPDATE usuario SET usu_cedula = '$cedula', usu_nombres = '$nombres', usu_apellidos = '$apellidos', usu_direccion = '$direccion', usu_telefono = '$telefono', usu_correo = '$correo', usu_fecha_nacimiento = '$fechaNacimiento', usu_fecha_modificacion = '$fecha' WHERE usu_codigo = $codigo";
 
         if ($conn->query($sql) === TRUE) { 
             echo "Se ha actualizado los datos personales correctamemte!!!<br>"; 
