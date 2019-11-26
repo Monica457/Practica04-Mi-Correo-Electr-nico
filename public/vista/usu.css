@@ -1,0 +1,61 @@
+h1{
+  text-align: center;
+  color: maroon;
+  font-size: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#formulario01{
+  position: relative;
+  width: 50%;
+  height: 470px;
+  left: 325px;
+  border: teal 2px solid;
+  padding: 15px;
+}
+
+#formulario02{
+  position: relative;
+  width: 50%;
+  height: 200px;
+  left: 370px;
+  border: teal 2px solid;
+  padding: 15px;
+}
+
+input,select{
+  padding: 4px;
+  width: 240px;
+  max-width: 100%;
+  font-size:1.2em;
+  margin-bottom: 10px;
+}
+
+label {
+  display: inline-block;
+  width: 45%;
+}
+
+body, input {
+  font-family: sans-serif;
+}
+
+#crear, #cancelar, #login{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: relative;
+  width: 30%;
+  height: 40px;
+  -moz-border-radius: 50px;
+  -webkit-border-radius:50px;
+}
+#cancelar{
+  left: 120px;
+}
+
+#login{
+  top: 15px;
+  left: 220px;
+}
+header{
+  background-color: gray;
+}
